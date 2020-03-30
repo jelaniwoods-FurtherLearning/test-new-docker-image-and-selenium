@@ -131,6 +131,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    childprocess (3.0.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.6)
     crack (0.4.3)
@@ -334,6 +335,7 @@ GEM
       rspec-support (~> 3.9)
     rspec-support (3.9.2)
     ruby_dep (1.5.0)
+    rubyzip (2.3.0)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
@@ -347,6 +349,9 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
     spoon (0.0.6)
       ffi
     spring (2.1.0)
@@ -440,6 +445,7 @@ DEPENDENCIES
   rspec-html-matchers
   rspec-rails
   sassc-rails
+  selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
   sprockets (< 4)
