@@ -231,12 +231,12 @@ describe "/paper" do
 end
 
 describe "/paper" do
-  it "has a second level heading with text 'We tied!' that is red.", {:js => true, :points => 1} do
+  it "has a second level heading with text 'We tied!' that is red/orange.", {:js => true, :points => 1} do
     visit "/paper"
     
     within "html" do
       within "body" do
-        heading = find("h2", :text => /They Played Paper/i)
+        heading = find("h2", :text => /We tied/i)
         
         rgba_color_value = heading.native.style("color")
         color_number_values = rgba_color_value.gsub(/rgba?\(/, "").split(",")
@@ -350,7 +350,7 @@ describe "/paper" do
 end
 
 describe "/paper" do
-  it "has a 'div' that contains heading 'We tied!' with a red border color.", {:js => true, :points => 1} do
+  it "has a 'div' that contains heading 'We tied!' with a red/orange border color.", {:js => true, :points => 1} do
     visit "/paper"
 
     within "html" do

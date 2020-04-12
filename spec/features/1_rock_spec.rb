@@ -232,7 +232,7 @@ describe "/rock" do
     
     within "html" do
       within "body" do
-        heading = find("h2", :text => /They Played Paper/i)
+        heading = find("h2", :text => /We lost/i)
         
         rgba_color_value = heading.native.style("color")
         color_number_values = rgba_color_value.gsub(/rgba?\(/, "").split(",")
