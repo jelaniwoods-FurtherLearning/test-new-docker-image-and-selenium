@@ -45,13 +45,13 @@ gem 'sassc-rails'
 gem 'execjs'
 gem 'therubyracer', platforms: :ruby
 group :development, :test do
-  gem 'awesome_print'
+  gem 'amazing_print'
   gem 'dotenv-rails'
   gem 'grade_runner', github: 'firstdraft/grade_runner'
   gem 'pry-rails'
   gem 'sqlite3', '~> 1.4.1'
   gem 'table_print'
-  gem 'web_git', github: 'firstdraft/web_git'
+  gem 'web_git', github: 'firstdraft/web_git', branch: 'spring2020'
 end
 
 group :development do
@@ -61,13 +61,14 @@ group :development do
   gem 'draft_generators', github: 'firstdraft/draft_generators', branch: 'winter-2020'
   gem 'letter_opener'
   gem 'meta_request'
+  gem 'solargraph'
 end
 
 group :test do
   gem 'capybara'
   gem 'factory_bot_rails'
-  gem 'rspec-html-matchers'
   gem 'rspec-rails'
+  gem 'rspec-html-matchers'
   gem "selenium-webdriver"
   gem 'webmock'
 end
