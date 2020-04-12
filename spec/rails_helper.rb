@@ -51,6 +51,8 @@ RSpec.configure do |config|
      desired_capabilities: capabilities
   end
   
+  Capybara.default_max_wait_time = 5
+
   Capybara.javascript_driver = :headless_chrome
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
